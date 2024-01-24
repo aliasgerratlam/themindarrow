@@ -118,9 +118,6 @@ p {
   .main-btn:hover {
     background-color: transparent;
     color: #FFAB4A; }
-  .main-btn.main-btn-2 {
-    background: #fff;
-    border-color: #fff; }
     .main-btn.main-btn-2:hover {
       background-color: transparent;
       color: #fff; }
@@ -636,10 +633,10 @@ p {
         position: relative; }
         .header-nav .navigation .navbar .navbar-nav a {
           font-size: 16px;
-          font-weight: 500;
-          color: #fff;
+          font-weight: 700;
+          color: #FFF;
           font-family: "Inter";
-          text-transform: capitalize;
+          text-transform: uppercase;
           position: relative;
           -webkit-transition: all 0.3s ease-out 0s;
           -moz-transition: all 0.3s ease-out 0s;
@@ -1367,24 +1364,45 @@ p {
 ===========================*/
 .hero-area {
   position: relative;
-  padding: 7px 0px; }
+  overflow: hidden;
+  min-height: 100vh;
+}
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-area {
       padding-bottom: 100px; } }
   @media (max-width: 767px) {
     .hero-area {
-      padding-bottom: 100px; } }
-  .hero-area .section__bg {
-    background-image: url("https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
-    .hero-area .section__bg::before {
+      padding-bottom: 100px; } 
+  }
+    .hero-area::after {
+      content: " ";
+      width: 68vw;
+      height: 65vw;
+      border-radius: 50%;
+      outline: 1px solid transparent;
+      z-index: -2;
       position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background: #000;
-      opacity: .4; }
+      background: #fff url("https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center no-repeat;
+      background-size: 100%;
+      background-position: calc(100% - 130px) bottom;
+      top: -46%;
+      right: -20%; 
+      box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    }
+    .hero-area::before {
+      content: " ";
+      width: 68vw;
+      height: 65vw;
+      transform: rotate(260deg);
+      position: absolute;
+      top: -45%;
+      right: -18%;
+      border-radius: 50%;
+      outline: 1px solid transparent;
+      z-index: -2;
+      background-image: linear-gradient(45deg, #e9a17b, #ff7cb0);
+    background-repeat: repeat-x;
+    }
   .hero-area.hero-2-area {
     padding-bottom: 0; }
     .hero-area.hero-2-area .section__bg {
@@ -1523,11 +1541,13 @@ p {
       padding-bottom: 30px;
       text-align: center; } }
   .hero-content .title {
-    color: #fff;
-    font-size: 70px;
+    color: #172b43;
+    font-size: 55px;
     font-family: 'DM Serif Display', serif;
     padding-top: 38px;
-    line-height: 74px; }
+    line-height: 65px;
+    font-weight: 700; 
+  }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .hero-content .title {
         font-size: 62px; } }
@@ -1541,11 +1561,10 @@ p {
         line-height: 56px; } }
   .hero-content > span {
     display: block;
-    color: #fff;
+    color: #172b43;
     font-size: 20px;
-    color: #fff;
     padding-top: 0px;
-    padding-bottom: 58px; }
+    padding-bottom: 40px; }
   .hero-content a {
     font-size: 20px;
     font-weight: 600; }
@@ -4078,7 +4097,6 @@ p {
     5.SERVICE css 
 ===========================*/
 .service-area {
-  background: #F3F3F3;
   padding: 80px 0 100px;
 }
   .service-area.service-8-area {
@@ -4094,10 +4112,7 @@ p {
   background: #fff;
   border-radius: 5px;
   padding: 50px 30px 30px;
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
+  border: 1px solid #f3f3f3;
   transition: all 0.4s ease-out 0s;
   margin-bottom: 25px; 
 }

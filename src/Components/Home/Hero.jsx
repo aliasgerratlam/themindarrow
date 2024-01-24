@@ -1,21 +1,21 @@
-import { Col, Container, Image, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
     return (
         <>
             <section className="hero-area">
-                <div className="section__bg"></div>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-9">
+                <Container>
+                    <Row className="align-items-center">
+                        <Col lg={7}>
                             <div className="hero-content">
-                                <h1 className="title animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">Global Leader in Modern Business Innovation</h1>
-                                <span className="animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="300ms">With unique business passionate people behind.</span>
-                                <a className="main-btn main-btn-2 animated wow fadeInDown" data-wow-duration="3000ms" data-wow-delay="600ms" href="#">Let’s Talk</a>
+                                <h1 className="title" data-wow-duration="3000ms" data-wow-delay="0ms">Global Leader in Modern Business Innovation</h1>
+                                <span>With unique business passionate people behind.</span>
+                                <Link className="main-btn main-btn-2" href="#">Let’s Talk</Link>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
 
             {/* <section className="sub-item-area">

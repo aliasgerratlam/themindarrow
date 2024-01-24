@@ -1,6 +1,6 @@
 import { Container, Image, Nav, Navbar } from "react-bootstrap"
 import { Link, NavLink } from "react-router-dom"
-import Logo from "../assets/images/white-logo.png"
+import Logo from "../assets/images/logo.png"
 
 const Header = () => {
    return (
