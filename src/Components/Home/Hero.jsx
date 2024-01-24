@@ -1,17 +1,19 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import ReactWOW from "react-wow"
 
 const Hero = () => {
     return (
         <>
             <section className="hero-area">
+                <div className="shape"></div>
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={7}>
+                        <Col lg={6}>
                             <div className="hero-content">
-                                <h1 className="title" data-wow-duration="3000ms" data-wow-delay="0ms">Global Leader in Modern Business Innovation</h1>
-                                <span>With unique business passionate people behind.</span>
-                                <Link className="main-btn main-btn-2" href="#">Let’s Talk</Link>
+                                <ReactWOW animation='fadeIn' delay="0.3s"><h1 className="title">Global Leader in Modern Business Innovation</h1></ReactWOW>
+                                <ReactWOW animation='fadeIn' delay="0.6s"><span>With unique business passionate people behind.</span></ReactWOW>
+                                <ReactWOW animation='fadeIn' delay="0.9s"><Link className="main-btn main-btn-2" href="#">Let’s Talk</Link></ReactWOW>
                             </div>
                         </Col>
                     </Row>

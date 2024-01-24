@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AppLayout from "./ui/AppLayout";
-import Home from "./Pages/Home";
-import "./assets/css/style.css"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AppLayout from './ui/AppLayout';
+import Home from './Pages/Home';
+import './assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

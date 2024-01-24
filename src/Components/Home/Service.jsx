@@ -1,6 +1,7 @@
 import { Col, Container, Image, Row } from "react-bootstrap"
 import Line from "../../assets/images/hero-line.png"
 import { Link } from "react-router-dom"
+import ReactWOW from "react-wow"
 
 const Service = () => {
     return (
@@ -16,7 +17,7 @@ const Service = () => {
                     </Col>
                 </Row>
                 <Row className="justify-content-center">
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.2s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="62.001" height="70" viewBox="0 0 62.001 70">
@@ -35,9 +36,9 @@ const Service = () => {
                             </div>
                             <h3 className="title">Account Management & Leadership</h3>
                             <p>Client leadership dedicated to leading media and marketing transformation for our clients. Helping clients develop and drive Good Growth in their business by creating teams with the right balance for each client - performance and brand marketing, global and local, data-driven and purpose driven.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.4s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="92.773" height="70" viewBox="0 0 92.773 70">
@@ -62,9 +63,9 @@ const Service = () => {
                             </div>
                             <h3 className="title">Content & Partnerships</h3>
                             <p>From content creation and partnership brokering to dynamic content optimisation and sponsorship, we do a lot more in the world of content than you would imagine from a media agency.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.6s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="79.34" height="70" viewBox="0 0 79.34 70">
@@ -80,14 +81,14 @@ const Service = () => {
                             </div>
                             <h3 className="title">Data & Analytics</h3>
                             <p>All data and analytics services delivered with a bespoke collaborative data visualisation and workflow approach. We also lead the market in ethical use of data with tools such as the Data Ethics Compass to ensure both brand safe and ethical use of data.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.8s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="56.911" height="70.537" viewBox="0 0 56.911 70.537">
                                     <g transform="translate(0.25 0.25)">
-                                        <path className="white" data-name="Path 10777" d="M56.033,70l3.225-19.556L53.832,32.628a22.7,22.7,0,1,1,44.162-7.392l.016,3.092,4.813,14.08H97.179l-1.2,15.051-11.975-1.1-1.638,13.28,2.519.31L86.227,59.11l12.084,1.11,1.214-15.275h6.847L100.546,27.9l-.014-2.67a25.236,25.236,0,1,0-49.114,8.18l5.239,17.207L53.528,69.588Z" transform="translate(-50.06)" fill="#235c51" stroke-width="0.5" />
+                                        <path className="white" data-name="Path 10777" d="M56.033,70l3.225-19.556L53.832,32.628a22.7,22.7,0,1,1,44.162-7.392l.016,3.092,4.813,14.08H97.179l-1.2,15.051-11.975-1.1-1.638,13.28,2.519.31L86.227,59.11l12.084,1.11,1.214-15.275h6.847L100.546,27.9l-.014-2.67a25.236,25.236,0,1,0-49.114,8.18l5.239,17.207L53.528,69.588Z" transform="translate(-50.06)" fill="#235c51" strokeWidth="0.5" />
                                         <path data-name="Path 10778" d="M151.369,66.148a5.5,5.5,0,0,1,7.479-7.484,5.5,5.5,0,0,1,10.586,0,5.5,5.5,0,0,1,7.48,7.484,5.5,5.5,0,0,1-1.5,10.792h-9.152a5.5,5.5,0,0,0-5.5,5.5v31.081h-2.4V82.443a5.5,5.5,0,0,0-5.5-5.5,5.5,5.5,0,0,1-1.5-10.792Z" transform="translate(-138.717 -43.73)" fill="#ffab4a" />
                                         <g data-name="Group 2290" transform="translate(19.431 24.183)">
                                             <rect data-name="Rectangle 3474" width="2.397" height="2.397" transform="translate(9.59)" fill="#fff" />
@@ -99,17 +100,17 @@ const Service = () => {
                             </div>
                             <h3 className="title">Insights & Culture</h3>
                             <p>We believe in Precisely Human Intelligence that balances the accuracy of a machine-based approach with the empathy delivered by human insight. This is delivered through services including Audience Origin, a unique combination of panel-based data, digital data, and client data for deep audience understanding and activation and Mindarrow’s Neurolab, which uses medical-grade technology to measure second-by-second, non-conscious neurological responses to brand stories and media.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='1s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="69.996" height="70" viewBox="0 0 69.996 70">
                                     <g transform="translate(-0.014)">
                                         <path className="white" data-name="Path 15" d="M31.022,62.02A31.01,31.01,0,1,1,62.03,31.008H59.319a28.3,28.3,0,1,0-28.3,28.3V62.02h0Z" transform="translate(0 0)" fill="#235c51" />
                                         <g data-name="Group 7" transform="translate(9.764 9.757)">
-                                            <path data-name="Path 16" d="M92.584,71.368a21.252,21.252,0,1,0,0,42.5v-6.921a14.331,14.331,0,1,1,14.332-14.334h6.931A21.283,21.283,0,0,0,92.584,71.368Z" transform="translate(-71.328 -71.368)" fill="#ffab4a" stroke="#fff" stroke-width="1.5" />
-                                            <path data-name="Path 17" d="M187.424,180.007a7.412,7.412,0,1,1-7.413-7.411A7.411,7.411,0,0,1,187.424,180.007Z" transform="translate(-158.753 -158.756)" fill="#ffab4a" stroke="#fff" stroke-width="1.5" />
+                                            <path data-name="Path 16" d="M92.584,71.368a21.252,21.252,0,1,0,0,42.5v-6.921a14.331,14.331,0,1,1,14.332-14.334h6.931A21.283,21.283,0,0,0,92.584,71.368Z" transform="translate(-71.328 -71.368)" fill="#ffab4a" stroke="#fff" strokeWidth="1.5" />
+                                            <path data-name="Path 17" d="M187.424,180.007a7.412,7.412,0,1,1-7.413-7.411A7.411,7.411,0,0,1,187.424,180.007Z" transform="translate(-158.753 -158.756)" fill="#ffab4a" stroke="#fff" strokeWidth="1.5" />
                                         </g>
                                         <g data-name="Group 8" transform="translate(31.022 31.01)">
                                             <path className="white" data-name="Path 18" d="M242.544,265.809l-15.729-38.99L265.8,242.555l-16.183,7.068ZM231.716,231.72l10.929,27.091,4.917-11.248,11.243-4.911Z" transform="translate(-226.815 -226.819)" fill="#235c51" />
@@ -120,9 +121,9 @@ const Service = () => {
                             </div>
                             <h3 className="title">Performance Marketing</h3>
                             <p>Strategy, planning, buying and optimisation for all digital media. It's not just about Google, Facebook and Amazon, it's about driving outcomes for our clients and finding the audience wherever they are in the digital landscape.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
-                    <Col lg={4} md={6} sm={8}>
+                    <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='1.2s'>
                         <div className="service-item mt-30">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="76.473" height="70" viewBox="0 0 76.473 70">
@@ -141,7 +142,7 @@ const Service = () => {
                             </div>
                             <h3 className="title">Strategy & Planning</h3>
                             <p>To drive Good Growth our Strategy & Planning teams are powered by data led insights but rooted in human behaviour. Planning comes in many flavours, from communications planning, performance planning and connections planning to ecommerce consulting and is defined by client and goals - communications planning, performance planning, connections planning, intentional planning (to deliver good growth) to ecommerce consulting.</p>
-                        </div>
+                        </div></ReactWOW>
                     </Col>
                     <Col md={12} className="text-center mt-4">
                         <Link to="/service" className="main-btn">View All</Link>

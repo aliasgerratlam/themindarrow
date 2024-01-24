@@ -1,11 +1,29 @@
 import { Container, Image, Nav, Navbar } from "react-bootstrap"
 import { Link, NavLink } from "react-router-dom"
 import Logo from "../assets/images/logo.png"
+import { useLayoutEffect, useRef, useState } from "react"
 
 const Header = () => {
+   const header = useRef(null);
+   const [sticky, setSticky] = useState(false);
+
+   useLayoutEffect(() => {
+      const handleScroll = () => {
+         const headerRect = header.current.getBoundingClientRect();
+         const isSticky = headerRect.top <= -200;
+         setSticky(isSticky)
+      }
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+         window.removeEventListener('scroll', handleScroll);
+      }
+   }, [])
+
    return (
-      <header className="header-area">
-         <div className="header-nav">
+      <header ref={header} className="header-area">
+         <div className={`header-nav ${sticky ? "sticky-header" : ""}`}>
             <Container>
                <div className="navigation">
                   <Navbar expand="lg">
