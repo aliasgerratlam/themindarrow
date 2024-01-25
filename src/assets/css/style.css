@@ -12352,7 +12352,7 @@ p {
   }
 
   .testimonial-area {
-    padding: 50px 0 130px;
+    padding: 50px 20px 100px;
     width: 95%;
   }
 
@@ -12361,11 +12361,11 @@ p {
   }
 
   .brand-3-area {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   .brand-3-items {
-    gap: 3rem;
+    gap: 1.5rem;
   }
 
   .footer-item {
@@ -12397,5 +12397,50 @@ p {
 
   .footer-area-2 .footer-copyright {
     text-align: center;
+  }
+
+  .testimonial-active .slick-dots {
+    bottom: -40px;
+  }
+
+  .brand-3-items .item img {
+    max-width: 60px;
+  }
+
+  .header-nav .navigation .navbar .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    width: calc(100% + 30px);
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .header-nav .navigation .navbar .navbar-nav a {
+    color: #000;
+  }
+
+  .header-nav .navigation .navbar .navbar-nav {
+    gap: 0.5rem;
+  }
+
+  .header-nav.sticky-header .navigation .navbar .navbar-nav a:before,
+  .header-nav.sticky-header .navigation .navbar .navbar-nav a.active:before {
+    display: none;
+  }
+
+  .header-nav.sticky-header .navigation .navbar .navbar-nav a {
+    background-color: #fff;
+    padding: 5px 15px;
+  }
+
+  .header-nav.sticky-header .navigation .navbar .navbar-nav a.active {
+    background-color: #f3f3f3;
+  }
+
+  .header-nav .navigation .navbar .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 }
