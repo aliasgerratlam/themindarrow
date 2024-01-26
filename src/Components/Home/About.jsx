@@ -1,10 +1,8 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import Line from '../../assets/images/hero-line.png';
 import { Link } from 'react-router-dom';
-import AboutImg from '../../assets/images/about2.png';
+import AboutImg from '../../assets/images/about.png';
 import AboutImg2 from '../../assets/images/about3.png';
-import { BsGraphUp } from 'react-icons/bs';
-import { AiOutlineNotification } from 'react-icons/ai';
 import ReactWOW from 'react-wow';
 
 const About = () => {
@@ -22,10 +20,10 @@ const About = () => {
                     <Col lg={6}>
                         <div className="about-content">
                             <img src={Line} alt="" />
-                            <span>About us</span>
-                            <h3 className="title">We create mind blowing </h3>
+                            <span>About Mindarrow</span>
+                            <h3 className="title">Discovering Mindarrow: Unveiling the Magic Within!</h3>
                             <p className="m-0">
-                                We are a global media agency network of 5,000 people across 20 countries united by our desire to drive good growth for our clients. Our diverse team combines expertise in media strategy, creative solutions, and innovative technology to deliver impactful campaigns. Together, we cultivate meaningful connections, surpassing client expectations and fostering sustainable success.
+                                Welcome to Mindarrow, an innovative performer and highly result oriented marketing company dedicated to boost businesses in the ever-evolving digital landscape.
                             </p>
                             <Link className="main-btn" to="/about">
                                 About us
@@ -37,9 +35,13 @@ const About = () => {
                 <Row className="align-items-center about-section-2">
                     <Col lg={6}>
                         <div className="about-content">
-                            <h3 className="title">It's all about the people, and process</h3>
-                            <p className="m-0">In the realm of a digital agency, success hinges on two pivotal elements: people and process. A talented and collaborative team, coupled with streamlined and effective processes, forms the bedrock for delivering exceptional digital solutions and driving client success.</p>
-                            <Row className="mt-4">
+                            <h3 className="title">Our Mission at Mindarrow</h3>
+                            <p className="m-0">At Mindarrow, our mission is to empower businesses to achieve their goals through strategic and data-driven performance marketing solutions. We believe in the power of creativity, technology, and analytics to drive measurable and impactful results.
+                            </p>
+                            <Link className="main-btn" to="/about">
+                                Read More
+                            </Link>
+                            {/* <Row className="mt-4">
                                 <Col>
                                     <div className="small-info">
                                         <BsGraphUp />
@@ -55,7 +57,7 @@ const About = () => {
                                         <p>We help you social media grow your business</p>
                                     </div>
                                 </Col>
-                            </Row>
+                            </Row> */}
                         </div>
                     </Col>
 

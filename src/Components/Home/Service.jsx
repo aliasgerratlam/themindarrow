@@ -12,7 +12,7 @@ const Service = () => {
                         <div className="section-title text-center">
                             <Image src={Line} alt="line" />
                             <h3 className="title">Our Service</h3>
-                            <p>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
+                            <p>Following are the departments where we make a difference.</p>
                         </div>
                     </Col>
                 </Row>
@@ -35,7 +35,8 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Account Management & Leadership</h3>
-                            <p>Client leadership dedicated to leading media and marketing transformation for our clients. Helping clients develop and drive Good Growth in their business by creating teams with the right balance for each client - performance and brand marketing, global and local, data-driven and purpose driven.</p>
+                            <p>Coming with a hoard of experience, MindArrow commands a respectable position in the Performance Marketing domain. This aids Client Leadership, who mind what matters the most for your brand and then arrow the bull’s eye to garner excellence.
+                            </p>
                         </div></ReactWOW>
                     </Col>
                     <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.4s'>
@@ -62,7 +63,7 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Content & Partnerships</h3>
-                            <p>From content creation and partnership brokering to dynamic content optimisation and sponsorship, we do a lot more in the world of content than you would imagine from a media agency.</p>
+                            <p>from content creation and partnership brokering to dynamic content optimization and sponsorship, we at Mindarrow pen down your expectations and add the desired conjunctions to make them a pleasing reality.</p>
                         </div></ReactWOW>
                     </Col>
                     <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.6s'>
@@ -80,7 +81,7 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Data & Analytics</h3>
-                            <p>All data and analytics services delivered with a bespoke collaborative data visualisation and workflow approach. We also lead the market in ethical use of data with tools such as the Data Ethics Compass to ensure both brand safe and ethical use of data.</p>
+                            <p>Every data and analytic service by Mindarrow is delivered with a bespoke collaborative data visualization and workflow approach. Mindarrow holds a commanding position in ethical use of data back by tools such as the Data Ethics Compass that ensures brand safety and ethical use of data.</p>
                         </div></ReactWOW>
                     </Col>
                     <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='0.8s'>
@@ -99,7 +100,7 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Insights & Culture</h3>
-                            <p>We believe in Precisely Human Intelligence that balances the accuracy of a machine-based approach with the empathy delivered by human insight. This is delivered through services including Audience Origin, a unique combination of panel-based data, digital data, and client data for deep audience understanding and activation and Mindarrow’s Neurolab, which uses medical-grade technology to measure second-by-second, non-conscious neurological responses to brand stories and media.</p>
+                            <p>We at Mindarrow believe in the use of Precise Human Intelligence that holds a repute of balancing the accuracy of a machine centric approach with the empathy delivered by human insight. This culture is the outcome of services such as Audience Origin, which is an amalgamation of panel based data, digital data, and client data for deep audience understanding & activation and Mindarrow’s Neurolab, which uses medical grade technology to measure the minutest of seconds, non-conscious neurological responses to brand story and media.</p>
                         </div></ReactWOW>
                     </Col>
                     <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='1s'>
@@ -120,7 +121,7 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Performance Marketing</h3>
-                            <p>Strategy, planning, buying and optimisation for all digital media. It's not just about Google, Facebook and Amazon, it's about driving outcomes for our clients and finding the audience wherever they are in the digital landscape.</p>
+                            <p>It is a sort of digital marketing strategy beneficial for brands who want to connect with their target audience on a large scale to meet their objectives. Mindarrow possesses the calibre and experience of devising strategy, planning, purchasing and optimization for every digital media to deliver the goods for our clients. </p>
                         </div></ReactWOW>
                     </Col>
                     <Col lg={4} md={6} sm={8}><ReactWOW animation='fadeInUp' delay='1.2s'>
@@ -141,7 +142,7 @@ const Service = () => {
                                 </svg>
                             </div>
                             <h3 className="title">Strategy & Planning</h3>
-                            <p>To drive Good Growth our Strategy & Planning teams are powered by data led insights but rooted in human behaviour. Planning comes in many flavours, from communications planning, performance planning and connections planning to ecommerce consulting and is defined by client and goals - communications planning, performance planning, connections planning, intentional planning (to deliver good growth) to ecommerce consulting.</p>
+                            <p>Mindarrow’s data driven insights is a shot in the arm for our Strategy and Planning experts who churn good growth in return. Planning is a rainbow of flavors, oozing from communication planning, performance planning, and connections planning to ecommerce consulting, and is defined by the clients and their goals met.</p>
                         </div></ReactWOW>
                     </Col>
                     <Col md={12} className="text-center mt-4">

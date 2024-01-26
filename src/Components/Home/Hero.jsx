@@ -11,7 +11,7 @@ const Hero = () => {
                     <Row className="align-items-center">
                         <Col lg={6}>
                             <div className="hero-content">
-                                <ReactWOW animation='fadeIn' delay="0.3s"><h1 className="title">Global Leader in Modern Business Innovation</h1></ReactWOW>
+                                <ReactWOW animation='fadeIn' delay="0.3s"><h1 className="title">Blending AI with innovation to elevate brand image, digitally</h1></ReactWOW>
                                 <ReactWOW animation='fadeIn' delay="0.6s"><span>With unique business passionate people behind.</span></ReactWOW>
                                 <ReactWOW animation='fadeIn' delay="0.9s"><Link className="main-btn main-btn-2" href="#">Let’s Talk</Link></ReactWOW>
                             </div>
