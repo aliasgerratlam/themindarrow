@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <div className="footer-item">
           <Row>
-            <Col lg={6} md={6}>
+            <Col lg={6} md={6} sm={12}>
               <Row>
                 <Col md={10} className="footer-top">
                   <div className="footer-about mt-30">
@@ -38,7 +38,7 @@ const Footer = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={2} md={6}>
+            <Col lg={2} md={6} sm={6}>
               <div className="footer-list mt-30">
                 <h4 className="title">Quick links</h4>
                 <ul>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={4} md={6}>
+            <Col lg={4} md={6} sm={6}>
               <div className="footer-info mt-30">
                 <h3 className="title">Get in touch</h3>
                 <ul>

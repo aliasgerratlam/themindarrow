@@ -35,7 +35,7 @@ const Header = () => {
                            <NavLink className="nav-link" to="/">Home</NavLink>
                            <NavLink className="nav-link" to="/about">About</NavLink>
                            <NavLink className="nav-link" to="/career">Career</NavLink>
-                           <NavLink className="nav-link" to="/clients">Clients</NavLink>
+                           <NavLink className="nav-link" to="/service">Services</NavLink>
                         </Nav>
                      </Navbar.Collapse>
 

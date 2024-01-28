@@ -8,7 +8,7 @@ const Process = () => {
         <Row>
           <Col lg={12} className="section-title section-title-2 text-center">
             <h3 className="title">Our Process</h3>
-            <p>We Follow These Flowless Process !</p>
+            <p className='text-white'>We Follow These Flowless Process !</p>
           </Col>
         </Row>
       </Container>

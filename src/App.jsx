@@ -4,6 +4,9 @@ import Home from './Pages/Home';
 import './assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutPage from './Pages/AboutPage';
+import Career from './Pages/Career';
+import ServicePage from './Pages/Service';
+import ContactPage from './Pages/Contact';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/service" element={<ServicePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
