@@ -26,7 +26,7 @@ const Header = () => {
       <div className={`header-nav ${sticky ? 'sticky-header' : ''}`}>
         <Container>
           <div className="navigation">
-            <Navbar expand="lg">
+            <Navbar expand="lg" collapseOnSelect>
               <Link className="navbar-brand logo" to="/">
                 <Image src={Logo} alt="logo" />
               </Link>
@@ -34,18 +34,18 @@ const Header = () => {
 
               <Navbar.Collapse className="sub-menu-bar" id="navbarSupportedContent">
                 <Nav className="ms-auto">
-                  <NavLink className="nav-link" to="/">
+                  <Nav.Link className="nav-link" as={NavLink} to="/" eventKey="1">
                     Home
-                  </NavLink>
-                  <NavLink className="nav-link" to="/about">
+                  </Nav.Link>
+                  <Nav.Link className="nav-link" as={NavLink} to="/about" eventKey="2">
                     About
-                  </NavLink>
-                  <NavLink className="nav-link" to="/career">
+                  </Nav.Link>
+                  <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="3">
                     Career
-                  </NavLink>
-                  <NavLink className="nav-link" to="/service">
+                  </Nav.Link>
+                  <Nav.Link className="nav-link" as={NavLink} to="/service" eventKey="4">
                     Services
-                  </NavLink>
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
 
