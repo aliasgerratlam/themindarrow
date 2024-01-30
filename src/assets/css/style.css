@@ -34,7 +34,7 @@ img {
 }
 
 main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {

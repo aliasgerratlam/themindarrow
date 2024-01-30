@@ -13,6 +13,7 @@ import Port7 from '../assets/images/portfolio-7.png';
 import Port8 from '../assets/images/portfolio-8.png';
 import ReactWOW from 'react-wow';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 const AboutPage = () => {
   useEffect(() => {
@@ -21,6 +22,13 @@ const AboutPage = () => {
 
   return (
     <div className="about-page">
+      <Helmet>
+        ‍<meta charSet="utf-8" />
+        <title>About us - Themindarrow</title>
+        <meta name="description" content="Discover the driving force behind Themindarrow Digital Marketing in our About Us page. Uncover our passion for innovative strategies, client success stories, and the dedicated team propelling your brand to new heights. Explore the intersection of creativity and technology as we navigate the ever-evolving landscape of digital marketing together."></meta>
+        <meta name="keywords" content="Digital Marketing Visionaries, Innovative Marketing Team, Strategic Solutions Expertise"></meta>
+      </Helmet>
+
       <PageTitle title="About us" />
 
       <section className="about-2-area">

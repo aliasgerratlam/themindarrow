@@ -1,11 +1,25 @@
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation, useParams } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
+import WhiteLogo from '../assets/images/white-logo.png';
 import { useLayoutEffect, useRef, useState } from 'react';
 
 const Header = () => {
   const header = useRef(null);
   const [sticky, setSticky] = useState(false);
+  const location = useLocation();
+
+  const checkLogo = () => {
+    switch (location.pathname) {
+      case '/about':
+      case '/career':
+      case '/service':
+      case '/contact':
+        return WhiteLogo;
+      default:
+        return Logo;
+    }
+  };
 
   useLayoutEffect(() => {
     const handleScroll = () => {
@@ -28,7 +42,7 @@ const Header = () => {
           <div className="navigation">
             <Navbar expand="lg" collapseOnSelect>
               <Link className="navbar-brand logo" to="/">
-                <Image src={Logo} alt="logo" />
+                <Image src={sticky ? Logo : checkLogo()} alt="logo" />
               </Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -40,17 +54,17 @@ const Header = () => {
                   <Nav.Link className="nav-link" as={NavLink} to="/about" eventKey="2">
                     About
                   </Nav.Link>
-                  <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="3">
-                    Career
-                  </Nav.Link>
-                  <Nav.Link className="nav-link" as={NavLink} to="/service" eventKey="4">
+                  <Nav.Link className="nav-link" as={NavLink} to="/service" eventKey="3">
                     Services
+                  </Nav.Link>
+                  <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="4">
+                    Career
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
 
               <div className="navbar-btn d-none d-sm-block">
-                <Link className="main-btn" to="/contact">
+                <Link className="main-btn" to="/contact" eventKey="5">
                   Contact us
                 </Link>
               </div>

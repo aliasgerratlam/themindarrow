@@ -1,20 +1,43 @@
 import { Col, Container, Form, Image, Row } from 'react-bootstrap';
 import PageTitle from '../ui/PageTitle';
-import { FaArrowRightLong } from 'react-icons/fa6';
 import Collab from '../assets/images/discovery.png';
 import Innovate from '../assets/images/innovate.png';
 import Success from '../assets/images/success.png';
 import WorkLife from '../assets/images/work-life.png';
 import ReactWOW from 'react-wow';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { useForm } from 'react-hook-form';
 
 const Career = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
   return (
     <div className="career-page">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Join us now - Themindarrow</title>
+        <meta
+          name="description"
+          content="Explore exciting opportunities at Themindarrow Digital Marketing! Join our dynamic team of digital enthusiasts, where innovation meets creativity. Discover a fulfilling career path in a collaborative environment that values growth, excellence, and the pursuit of cutting-edge marketing strategies. Take the next step in your professional journey with us."
+        ></meta>
+        <meta name="keywords" content="Digital Marketing Careers, Marketing Job Opportunities, SEO Specialist Positions"></meta>
+      </Helmet>
+
       <PageTitle title="Career" />
       <Container>
         <div className="career-info">
@@ -87,46 +110,93 @@ const Career = () => {
 
         <div className="form-wrapper">
           <div className="contact-us-box contact-us-area pt-4">
-            <Form>
+            <Form onSubmit={handleSubmit(onSubmit)}>
               <Row>
                 <Col lg={9} className="offset-md-2">
                   <ReactWOW animation="fadeIn">
                     <Row>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <input type="text" placeholder="First Name" />
+                          <input
+                            type="text"
+                            placeholder="First Name"
+                            {...register('firstname', {
+                              required: 'This field is required',
+                            })}
+                          />
+                          {errors?.firstname?.message && <p className="invalid-feedback d-block mb-0">{errors?.firstname?.message}</p>}
                         </div>
                       </Col>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <input type="text" placeholder="Last Name" />
+                          <input
+                            type="text"
+                            placeholder="Last Name"
+                            {...register('lastname', {
+                              required: 'This field is required',
+                            })}
+                          />
+                          {errors?.lastname?.message && <p className="invalid-feedback d-block mb-0">{errors?.lastname?.message}</p>}
                         </div>
                       </Col>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <input type="email" placeholder="Email address" />
+                          <input
+                            type="email"
+                            placeholder="Email address"
+                            {...register('email', {
+                              required: 'This field is required',
+                              validate: (value) => {
+                                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                                return re.test(String(value).toLowerCase()) || 'Please enter a valid email address';
+                              },
+                            })}
+                          />
+                          {errors?.email?.message && <p className="invalid-feedback d-block mb-0">{errors?.email?.message}</p>}
                         </div>
                       </Col>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <input type="text" placeholder="Phone number" />
+                          <input
+                            type="text"
+                            placeholder="Phone number"
+                            {...register('phone', {
+                              required: 'This field is required',
+                              validate: (value) => {
+                                const re = /^[0-9\b]+$/;
+                                return re.test(value) || 'Please enter a valid phone number';
+                              },
+                            })}
+                          />
+                          {errors?.phone?.message && <p className="invalid-feedback d-block mb-0">{errors?.phone?.message}</p>}
                         </div>
                       </Col>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <Form.Select aria-label="Default select example">
-                            <option>Location</option>
+                          <Form.Select
+                            aria-label="Default select example"
+                            {...register('location', {
+                              required: 'Please select location',
+                            })}
+                          >
+                            <option value="">Location</option>
                             <option value="1">United State</option>
                             <option value="2">United Kingdom</option>
                             <option value="3">Singapur</option>
                             <option value="4">India</option>
                             <option value="5">Dubai</option>
                           </Form.Select>
+                          {errors?.location?.message && <p className="invalid-feedback d-block mb-0">{errors?.location?.message}</p>}
                         </div>
                       </Col>
                       <Col md={6} className="p-0">
                         <div className="input-box">
-                          <Form.Select aria-label="Default select example">
+                          <Form.Select
+                            aria-label="Default select example"
+                            {...register('profession', {
+                              required: 'Please select your profession',
+                            })}
+                          >
                             <option value="">Select...</option>
                             <option value="Finance">Finance</option>
                             <option value="Office Support">Office Support</option>
@@ -139,6 +209,7 @@ const Career = () => {
                             <option value="Culture / Insights / Data Analytics">Culture / Insights / Data Analytics</option>
                             <option value="Performance Marketing">Performance Marketing</option>
                           </Form.Select>
+                          {errors?.profession?.message && <p className="invalid-feedback d-block mb-0">{errors?.profession?.message}</p>}
                         </div>
                       </Col>
                       <Col md={12} className="p-0">

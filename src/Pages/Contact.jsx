@@ -5,14 +5,35 @@ import Pin from '../assets/images/location.png';
 import Mail from '../assets/images/mail.png';
 import Phone from '../assets/images/phone.png';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { useForm } from 'react-hook-form';
 
 const ContactPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+  };
+
   return (
     <div className="contact-us-page">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>We Would Be Delighted To Hear From You</title>
+        <meta name="description" content="Contact us if you have any questions, feedback, concerns or issues, we’re here to help you. You can call us on our number or drop an email on our registered ID."></meta>
+        <meta name="keywords" content="Contact Us"></meta>
+      </Helmet>
+
       <PageTitle title="Contact us" />
 
       <Container className="contact-us-area">
@@ -55,31 +76,77 @@ const ContactPage = () => {
             <div className="contact-us-box">
               <h3 className="title text-center display-5">Get in Touch</h3>
               <p className="text-center">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours.</p>
-              <Form>
+              <Form onSubmit={handleSubmit(onSubmit)}>
                 <Row className="no-gutters">
-                  <Col md={6}>
+                  <Col md={6} className="p-0">
                     <div className="input-box mt-10">
-                      <input type="text" placeholder="First Name" />
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        {...register('firstname', {
+                          required: 'This field is required',
+                        })}
+                      />
+                      {errors?.firstname?.message && <p className="invalid-feedback d-block mb-0">{errors?.firstname?.message}</p>}
                     </div>
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="p-0">
                     <div className="input-box mt-10">
-                      <input type="text" placeholder="Last Name" />
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        {...register('lastname', {
+                          required: 'This field is required',
+                        })}
+                      />
+                      {errors?.lastname?.message && <p className="invalid-feedback d-block mb-0">{errors?.lastname?.message}</p>}
                     </div>
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="p-0">
                     <div className="input-box mt-10">
-                      <input type="email" placeholder="Email address" />
+                      <input
+                        type="email"
+                        placeholder="Email address"
+                        {...register('email', {
+                          required: 'This field is required',
+                          validate: (value) => {
+                            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                            return re.test(String(value).toLowerCase()) || 'Please enter a valid email address';
+                          },
+                        })}
+                      />
+                      {errors?.email?.message && <p className="invalid-feedback d-block mb-0">{errors?.email?.message}</p>}
                     </div>
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="p-0">
                     <div className="input-box mt-10">
-                      <input type="text" placeholder="Phone number" />
+                      <input
+                        type="text"
+                        placeholder="Phone number"
+                        {...register('phone', {
+                          required: 'This field is required',
+                          validate: (value) => {
+                            const re = /^\d{10}$/;
+                            return re.test(value) || 'Please enter a valid phone number';
+                          },
+                        })}
+                      />
+                      {errors?.phone?.message && <p className="invalid-feedback d-block mb-0">{errors?.phone?.message}</p>}
                     </div>
                   </Col>
-                  <Col lg={12}>
+                  <Col lg={12} className="p-0">
                     <div className="input-box mt-10">
-                      <textarea name="#" id="#" cols="30" rows="10" placeholder="Message"></textarea>
+                      <textarea
+                        name="#"
+                        id="#"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        {...register('message', {
+                          required: 'This field is required',
+                        })}
+                      ></textarea>
+                      {errors?.message?.message && <p className="invalid-feedback d-block mb-0">{errors?.message?.message}</p>}
                     </div>
 
                     <div className="input-box mt-4">

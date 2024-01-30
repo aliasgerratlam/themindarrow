@@ -16,6 +16,7 @@ import PPC from '../assets/images/service/payperclick.png';
 import Report from '../assets/images/service/analytic-and-marketing.png';
 import SMM from '../assets/images/service/social-media.png';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 const ServicePage = () => {
   useEffect(() => {
@@ -24,6 +25,16 @@ const ServicePage = () => {
 
   return (
     <div className="service-page">
+      <Helmet>
+        ‍<meta charSet="utf-8" />
+        <title>Services - TheMindArrow</title>
+        <meta
+          name="description"
+          content="Elevate your online presence with Themindarrow Digital Marketing's comprehensive services. From strategic SEO and engaging social media campaigns to innovative branding solutions, our expert team delivers tailored strategies that drive results. Explore our suite of digital marketing services designed to amplify your brand and achieve sustainable growth in the digital landscape."
+        ></meta>
+        <meta name="keywords" content="Services"></meta>
+      </Helmet>
+
       <PageTitle title="Services" />
 
       <section className="service-area service-page-area pb-100">
