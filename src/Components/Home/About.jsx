@@ -10,14 +10,14 @@ const About = () => {
     <section className="about-us-area">
       <Container>
         <Row className="align-items-center">
-          <Col lg={6}>
+          <Col md={6}>
             <ReactWOW animation="fadeInLeft">
               <div className="about-thumb">
                 <Image src={AboutImg} alt="about" />
               </div>
             </ReactWOW>
           </Col>
-          <Col lg={6}>
+          <Col md={6}>
             <div className="about-content mt-md-0 mt-4">
               <img src={Line} alt="" />
               <span>About Mindarrow</span>
@@ -31,7 +31,7 @@ const About = () => {
         </Row>
 
         <Row className="align-items-center about-section-2">
-          <Col lg={6} className="order-md-1 order-2">
+          <Col md={6} className="order-md-1 order-2">
             <div className="about-content">
               <h3 className="title">Our Mission at Mindarrow</h3>
               <p className="m-0">At Mindarrow, our mission is to empower businesses to achieve their goals through strategic and data-driven performance marketing solutions. We believe in the power of creativity, technology, and analytics to drive measurable and impactful results.</p>
@@ -41,7 +41,7 @@ const About = () => {
             </div>
           </Col>
 
-          <Col lg={6} className="order-md-2 order-1 mb-md-0 mb-4">
+          <Col md={6} className="order-md-2 order-1 mb-md-0 mb-4">
             <ReactWOW animation="fadeInRight">
               <div className="about-thumb">
                 <Image src={AboutImg2} alt="about" />

@@ -21,6 +21,15 @@ const Testimonial = () => {
         },
       },
       {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -45,7 +54,7 @@ const Testimonial = () => {
             <div className="section-title section-title-2 text-center">
               <Image src={Line} alt="line" />
               <h3 className="title">Testimonial</h3>
-              <p className='text-white'>Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
+              <p className="text-white">Our focus is on delivering you the absolute best support guiding you through training and providing.</p>
             </div>
           </Col>
         </Row>
@@ -58,7 +67,7 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className='text-white'>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
             <div className="info">
               <h5 className="title">Abdur Rohman</h5>
               <span>Sr. Product designer</span>
@@ -73,7 +82,7 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className='text-white'>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
             <div className="info">
               <h5 className="title">Mehedi Hasan</h5>
               <span>Sr. Product designer</span>
@@ -88,7 +97,7 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className='text-white'>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
             <div className="info">
               <h5 className="title">Mosharof Hossain</h5>
               <span>Sr. Product designer</span>
@@ -103,7 +112,7 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className='text-white'>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
             <div className="info">
               <h5 className="title">Rayhan Uddin</h5>
               <span>Sr. Product designer</span>
@@ -118,7 +127,7 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className='text-white'>There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
             <div className="info">
               <h5 className="title">Imran Ahmed</h5>
               <span>Sr. Product designer</span>

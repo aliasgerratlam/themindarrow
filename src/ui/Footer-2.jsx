@@ -14,21 +14,21 @@ const FooterNew = () => {
           </div>
 
           <Row>
-            <Col lg={7} md={6} xs={12}>
+            <Col lg={7} md={5} xs={12}>
               <ReactWOW animation="fadeIn">
-                <div className="footer-address">
+                <div className="footer-address text-md-start text-center">
                   <p>Level 7, 289 Flinders Lane Melbourne, Victoria 3000</p>
                   <a href="mailto:hello@themindarrow.com">hello@themindarrow.com</a>
                   <a href="tel:+61 3 9671 3953">+61 3 9671 3953</a>
                 </div>
               </ReactWOW>
             </Col>
-            <Col lg={3} md={3} xs={6} className="mt-md-0 mt-4">
+            <Col lg={3} md={3} xs={6} className="offset-lg-0 offset-md-1 offset-0 mt-md-0 mt-4">
               <ReactWOW animation="fadeIn">
                 <div className="footer-list mt-30">
                   <ul>
                     <li>
-                      <Link>About us</Link>
+                      <Link to="/about">About us</Link>
                     </li>
                     <li>
                       <Link>Terms and conditions</Link>
@@ -37,10 +37,7 @@ const FooterNew = () => {
                       <Link>Privacy policy</Link>
                     </li>
                     <li>
-                      <Link>News</Link>
-                    </li>
-                    <li>
-                      <Link>Contact us</Link>
+                      <Link to="/contact">Contact us</Link>
                     </li>
                   </ul>
                 </div>

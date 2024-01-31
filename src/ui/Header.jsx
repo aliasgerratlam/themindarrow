@@ -39,7 +39,7 @@ const Header = () => {
     <header ref={header} className="header-area">
       <div className={`header-nav ${sticky ? 'sticky-header' : ''}`}>
         <Container>
-          <div className="navigation">
+          <div className={`navigation ${location.pathname === '/' ? 'homepage-nav' : ''}`}>
             <Navbar expand="lg" collapseOnSelect>
               <Link className="navbar-brand logo" to="/">
                 <Image src={sticky ? Logo : checkLogo()} alt="logo" />
@@ -59,6 +59,9 @@ const Header = () => {
                   </Nav.Link>
                   <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="4">
                     Career
+                  </Nav.Link>
+                  <Nav.Link className="nav-link d-md-none d-block" as={NavLink} to="/contact" eventKey="5">
+                    Contact us
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>

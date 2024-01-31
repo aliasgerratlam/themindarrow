@@ -189,7 +189,7 @@ const ContactPage = () => {
         </Row>
       </Container>
 
-      <div className="contact-map">
+      <div className="contact-map mt-md-0 mt-5">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28581.96266852134!2d-74.00995716943102!3d40.72567301613608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599051e43f09%3A0x73708ab233ccf977!2sBobst%20Library%2C%2070%20Washington%20Square%20S%2C%20New%20York%2C%20NY%2010012%2C%20USA!5e0!3m2!1sen!2sin!4v1706355286677!5m2!1sen!2sin"
           width="600"

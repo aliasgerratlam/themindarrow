@@ -34,14 +34,14 @@ const AboutPage = () => {
       <section className="about-2-area">
         <Container>
           <Row>
-            <Col lg={5} className="order-md-1 order-2">
+            <Col md={5} className="order-md-1 order-2">
               <div className="about-2-content">
                 <h3 className="title">We help to create</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             </Col>
-            <Col lg={7} className="order-md-2 order-1">
+            <Col md={7} className="order-md-2 order-1">
               <ReactWOW duration="3000ms" animation="fadeInRight">
                 <div className="about-2-thumb">
                   <div className="thumb-2 text-center">
@@ -63,14 +63,14 @@ const AboutPage = () => {
       <section className="about-2-area about-2-section pt-0">
         <Container>
           <Row className="align-items-center">
-            <Col lg={7}>
+            <Col lg={7} md={6}>
               <div className="about-2-thumb animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">
                 <div className="thumb-2 text-start">
                   <img src={Mockup} alt="" />
                 </div>
               </div>
             </Col>
-            <Col lg={5} md={9}>
+            <Col lg={5} md={6}>
               <div className="about-2-content">
                 <h3 className="title">Why Choose us</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -103,7 +103,7 @@ const AboutPage = () => {
       <div id="portfolio-scroll" className="portfolio-style-1-area pt-70">
         <Container>
           <Row className="justify-content-center">
-            <Col lg={6} md={9}>
+            <Col lg={6} md={8}>
               <div className="section-title text-center">
                 <img src={Line} alt="" />
                 <h3 className="title">Our Project</h3>

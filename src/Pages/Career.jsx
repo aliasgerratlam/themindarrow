@@ -134,7 +134,7 @@ const Career = () => {
           <div className="contact-us-box contact-us-area pt-4">
             <Form onSubmit={handleSubmit(onSubmit)} ref={form}>
               <Row>
-                <Col lg={9} className="offset-md-2">
+                <Col lg={9} className="offset-lg-2 offset-0">
                   <ReactWOW animation="fadeIn">
                     <Row>
                       <Col md={6} className="p-0">
