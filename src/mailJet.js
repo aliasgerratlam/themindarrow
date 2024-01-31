@@ -1,54 +1,41 @@
-// mailjetService.js
-import axios from 'axios';
+import Mailjet from 'node-mailjet';
 
-const API_KEY = '1e4ffac2a7e5ee7d2c762d11f76da2a4';
-const API_SECRET = 'your-mailjet-api-secret';
-const API_URL = 'https://api.mailjet.com/v3.1/send';
+const API_KEY = 'd23df6371952115048adb1b2eeae3d89';
+const API_SECRET = '889de3bc1c29fd73349a8671890e8b02';
 
-const sendEmail = async (to, subject, text) => {
-  const data = {
+const mailjet = new Mailjet({
+  apiKey: API_KEY,
+  apiSecret: API_SECRET,
+});
+console.log('mailjet', mailjet);
+const sendEmail = async () => {
+  // const mailjetClient = Mailjet.apiConnect(API_KEY, API_SECRET);
+
+  const request = mailjet.post('send', { version: 'v3.1' }).request({
     Messages: [
       {
         From: {
-          Email: 'your-email@example.com',
-          Name: 'Your Name',
+          Email: 'aliasger@belgiumwebnet.com',
+          Name: 'Mailjet Pilot',
         },
         To: [
           {
-            Email: to,
+            Email: 'aliasger5363@gmail.com',
+            Name: 'passenger 1',
           },
         ],
-        Subject: subject,
-        TextPart: text,
+        Subject: 'Your email flight plan!',
+        HTMLPart: '<h3>Dear passenger 1, welcome to <a href="https://www.mailjet.com/">Mailjet</a>!</h3><br />May the delivery force be with you!',
       },
     ],
-  };
-
-  const headers = {
-    'Content-Type': 'application/json',
-  };
-
-  const auth = {
-    username: API_KEY,
-    password: API_SECRET,
-  };
+  });
 
   try {
-    const response = await axios.post(API_URL, data, { headers, auth });
-    console.log('Email sent:', response.data);
+    const response = await request;
+    console.log(response.body);
   } catch (error) {
-    console.error('Error sending email:', error.response.data);
+    console.log('MAILJET ERROR', error.message);
   }
 };
 
-export default { sendEmail };
-
-// const handleSendEmail = async () => {
-//     const to = 'recipient@example.com';
-//     const subject = 'Test Email';
-//     const text = 'This is a test email from React.js';
-
-//     await mailjetService.sendEmail(to, subject, text);
-// };
-
-// export { handleSendEmail as default };
+export default sendEmail;

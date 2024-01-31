@@ -7,6 +7,7 @@ import Phone from '../assets/images/phone.png';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useForm } from 'react-hook-form';
+import sendEmail from '../mailJet';
 
 const ContactPage = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const ContactPage = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    sendEmail();
     reset();
   };
 
@@ -170,7 +172,7 @@ const ContactPage = () => {
           style={{ border: 0 }}
           allowfullscreen=""
           aria-hidden="false"
-          tabindex="0"
+          tabIndex="0"
         ></iframe>
       </div>
     </div>
