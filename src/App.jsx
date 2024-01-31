@@ -7,20 +7,24 @@ import AboutPage from './Pages/AboutPage';
 import Career from './Pages/Career';
 import ServicePage from './Pages/Service';
 import ContactPage from './Pages/Contact';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/service" element={<ServicePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <Toaster />
+    </>
   );
 }
 

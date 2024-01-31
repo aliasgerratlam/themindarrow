@@ -5,11 +5,16 @@ import Innovate from '../assets/images/innovate.png';
 import Success from '../assets/images/success.png';
 import WorkLife from '../assets/images/work-life.png';
 import ReactWOW from 'react-wow';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
+import emailjs from '@emailjs/browser';
 
 const Career = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,8 +27,25 @@ const Career = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
+    setLoading(true);
+    toast
+      .promise(emailjs.sendForm('service_912vp6s', 'template_kivxkks', form.current, 'bqbvrLt12jqEt2O0V'), {
+        loading: 'Sending...',
+        success: <b>Your mail is successfully sent!</b>,
+        error: <b>Oops something is wrong.</b>,
+      })
+      .then(
+        (result) => {
+          console.log(result);
+          setLoading(false);
+          reset();
+        },
+        (error) => {
+          // Handle error if needed
+          console.error(error.text);
+          setLoading(false);
+        },
+      );
   };
 
   return (
@@ -110,7 +132,7 @@ const Career = () => {
 
         <div className="form-wrapper">
           <div className="contact-us-box contact-us-area pt-4">
-            <Form onSubmit={handleSubmit(onSubmit)}>
+            <Form onSubmit={handleSubmit(onSubmit)} ref={form}>
               <Row>
                 <Col lg={9} className="offset-md-2">
                   <ReactWOW animation="fadeIn">
@@ -119,6 +141,7 @@ const Career = () => {
                         <div className="input-box">
                           <input
                             type="text"
+                            disabled={loading}
                             placeholder="First Name"
                             {...register('firstname', {
                               required: 'This field is required',
@@ -131,6 +154,7 @@ const Career = () => {
                         <div className="input-box">
                           <input
                             type="text"
+                            disabled={loading}
                             placeholder="Last Name"
                             {...register('lastname', {
                               required: 'This field is required',
@@ -143,6 +167,7 @@ const Career = () => {
                         <div className="input-box">
                           <input
                             type="email"
+                            disabled={loading}
                             placeholder="Email address"
                             {...register('email', {
                               required: 'This field is required',
@@ -159,6 +184,7 @@ const Career = () => {
                         <div className="input-box">
                           <input
                             type="text"
+                            disabled={loading}
                             placeholder="Phone number"
                             {...register('phone', {
                               required: 'This field is required',
@@ -174,17 +200,18 @@ const Career = () => {
                       <Col md={6} className="p-0">
                         <div className="input-box">
                           <Form.Select
+                            disabled={loading}
                             aria-label="Default select example"
                             {...register('location', {
                               required: 'Please select location',
                             })}
                           >
-                            <option value="">Location</option>
-                            <option value="1">United State</option>
-                            <option value="2">United Kingdom</option>
-                            <option value="3">Singapur</option>
-                            <option value="4">India</option>
-                            <option value="5">Dubai</option>
+                            <option value="">Select Location</option>
+                            <option value="United State">United State</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Singapur">Singapur</option>
+                            <option value="India">India</option>
+                            <option value="Dubai">Dubai</option>
                           </Form.Select>
                           {errors?.location?.message && <p className="invalid-feedback d-block mb-0">{errors?.location?.message}</p>}
                         </div>
@@ -192,12 +219,13 @@ const Career = () => {
                       <Col md={6} className="p-0">
                         <div className="input-box">
                           <Form.Select
+                            disabled={loading}
                             aria-label="Default select example"
                             {...register('profession', {
                               required: 'Please select your profession',
                             })}
                           >
-                            <option value="">Select...</option>
+                            <option value="">Select Position</option>
                             <option value="Finance">Finance</option>
                             <option value="Office Support">Office Support</option>
                             <option value="New Business Marketing">New Business Marketing</option>
@@ -214,7 +242,7 @@ const Career = () => {
                       </Col>
                       <Col md={12} className="p-0">
                         <div className="input-box mt-4">
-                          <button className="main-btn " type="submit">
+                          <button className="main-btn " type="submit" disabled={loading}>
                             Submit
                           </button>
                         </div>

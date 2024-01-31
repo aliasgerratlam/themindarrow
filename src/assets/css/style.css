@@ -10651,6 +10651,21 @@ p {
   resize: none;
   padding-top: 15px;
 }
+
+.contact-us-box .input-box input:disabled,
+.contact-us-box .input-box select:disabled {
+  background: #dedede;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.contact-us-box .input-box button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #ef5350 !important;
+  color: #fff !important;
+}
+
 .contact-us-box .input-box button {
   width: 100%;
   height: 62px;

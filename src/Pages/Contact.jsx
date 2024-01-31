@@ -4,12 +4,17 @@ import ReactWOW from 'react-wow';
 import Pin from '../assets/images/location.png';
 import Mail from '../assets/images/mail.png';
 import Phone from '../assets/images/phone.png';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useForm } from 'react-hook-form';
-import sendEmail from '../mailJet';
+// import sendEmail from '../mailJet';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const ContactPage = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,9 +27,25 @@ const ContactPage = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    sendEmail();
-    reset();
+    setLoading(true);
+    toast
+      .promise(emailjs.sendForm('service_912vp6s', 'template_1gqfi28', form.current, 'bqbvrLt12jqEt2O0V'), {
+        loading: 'Sending...',
+        success: <b>Your mail is successfully sent!</b>,
+        error: <b>Oops something is wrong.</b>,
+      })
+      .then(
+        (result) => {
+          console.log(result);
+          setLoading(false);
+          reset();
+        },
+        (error) => {
+          // Handle error if needed
+          console.error(error.text);
+          setLoading(false);
+        },
+      );
   };
 
   return (
@@ -78,7 +99,7 @@ const ContactPage = () => {
             <div className="contact-us-box">
               <h3 className="title text-center display-5">Get in Touch</h3>
               <p className="text-center">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours.</p>
-              <Form onSubmit={handleSubmit(onSubmit)}>
+              <Form ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <Row className="no-gutters">
                   <Col md={6} className="p-0">
                     <div className="input-box mt-10">
@@ -96,6 +117,7 @@ const ContactPage = () => {
                     <div className="input-box mt-10">
                       <input
                         type="text"
+                        disabled={loading}
                         placeholder="Last Name"
                         {...register('lastname', {
                           required: 'This field is required',
@@ -108,6 +130,7 @@ const ContactPage = () => {
                     <div className="input-box mt-10">
                       <input
                         type="email"
+                        disabled={loading}
                         placeholder="Email address"
                         {...register('email', {
                           required: 'This field is required',
@@ -124,6 +147,7 @@ const ContactPage = () => {
                     <div className="input-box mt-10">
                       <input
                         type="text"
+                        disabled={loading}
                         placeholder="Phone number"
                         {...register('phone', {
                           required: 'This field is required',
@@ -143,6 +167,7 @@ const ContactPage = () => {
                         id="#"
                         cols="30"
                         rows="10"
+                        disabled={loading}
                         placeholder="Message"
                         {...register('message', {
                           required: 'This field is required',
@@ -152,7 +177,7 @@ const ContactPage = () => {
                     </div>
 
                     <div className="input-box mt-4">
-                      <button className="main-btn " type="submit">
+                      <button className="main-btn " type="submit" disabled={loading}>
                         Submit
                       </button>
                     </div>
@@ -170,7 +195,7 @@ const ContactPage = () => {
           width="600"
           height="450"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           aria-hidden="false"
           tabIndex="0"
         ></iframe>

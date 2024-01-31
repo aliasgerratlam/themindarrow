@@ -1,6 +1,7 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ReactWOW from 'react-wow';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const FooterNew = () => {
   return (
@@ -50,16 +51,14 @@ const FooterNew = () => {
                 <div className="footer-info mt-30">
                   <ul>
                     <li>
-                      <Link>Instagram</Link>
+                      <a href="https://www.instagram.com/mindarrowmedia/" target="_blank" rel="noreferrer">
+                        <FaInstagram /> Instagram
+                      </a>
                     </li>
                     <li>
-                      <Link>Facebook</Link>
-                    </li>
-                    <li>
-                      <Link>Youtube</Link>
-                    </li>
-                    <li>
-                      <Link>LinkedIn</Link>
+                      <a href="https://www.linkedin.com/company/the-mindarrow-media/" target="_blank" rel="noreferrer">
+                        <FaLinkedin /> LinkedIn
+                      </a>
                     </li>
                   </ul>
                 </div>
