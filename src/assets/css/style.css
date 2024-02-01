@@ -721,13 +721,13 @@ p {
   background-color: transparent;
 }
 
-.header-nav .navigation {
+.header-nav .container {
   transition: background 0.1s ease, transform 1s ease;
-  padding: 10px 0px;
+  padding: 10px 15px;
   transform: translateY(0px);
 }
 
-.header-nav.sticky-header .navigation {
+.header-nav.sticky-header .container {
   background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   /* backdrop-filter: blur(40px); */
@@ -758,10 +758,22 @@ p {
     top: 0;
   }
 
+  .header-nav .container {
+    padding: 0;
+  }
+
   .header-nav .navigation {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
+  }
+
+  .header-nav.sticky-header .container {
+    padding: 0;
+  }
+
+  .header-nav .container {
+    width: 95%;
   }
 }
 .header-nav.sticky {
@@ -12384,6 +12396,19 @@ p {
   color: #000;
   font-weight: 500;
   text-decoration: underline !important;
+}
+
+.policy-page .content {
+  padding: 5rem 0;
+}
+
+.policy-page .content h1 {
+  font-size: 2rem;
+}
+
+.policy-page .content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {

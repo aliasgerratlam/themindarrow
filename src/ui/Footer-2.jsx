@@ -17,7 +17,7 @@ const FooterNew = () => {
             <Col lg={7} md={5} xs={12}>
               <ReactWOW animation="fadeIn">
                 <div className="footer-address text-md-start text-center">
-                  <p>Level 7, 289 Flinders Lane Melbourne, Victoria 3000</p>
+                  <p>140 Barretts Ave New York, Holtsville, NY</p>
                   <a href="mailto:hello@themindarrow.com">hello@themindarrow.com</a>
                   <a href="tel:+61 3 9671 3953">+61 3 9671 3953</a>
                 </div>

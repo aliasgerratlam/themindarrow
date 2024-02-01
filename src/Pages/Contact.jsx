@@ -66,7 +66,7 @@ const ContactPage = () => {
               <div className="sub-2-item text-center">
                 <img src={Pin} alt="Pin" />
                 <h4 className="title">Reach us</h4>
-                <p>70 Washington Square South, New York, NY 10012, United States</p>
+                <p>140 Barretts Ave New York, Holtsville, NY</p>
               </div>
             </ReactWOW>
           </Col>

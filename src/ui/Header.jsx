@@ -15,6 +15,7 @@ const Header = () => {
       case '/career':
       case '/service':
       case '/contact':
+      case '/fraud-traffic-policy':
         return WhiteLogo;
       default:
         return Logo;
