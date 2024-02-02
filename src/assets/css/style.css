@@ -4614,7 +4614,7 @@ p {
   font-family: 'DM Serif Display', serif;
 }
 .accordion-button::after {
-  display: none !important;
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -4657,8 +4657,8 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 .about-2-content .item .title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 22px;
+  font-family: "Inter";
+  font-size: 18px;
   margin: 0;
   color: #000;
 }
@@ -12303,7 +12303,8 @@ p {
 }
 
 .about-2-area p {
-  line-height: 28px;
+  line-height: 25px;
+  font-size: 15px;
 }
 
 .portfolio-wrapper {
@@ -12444,7 +12445,8 @@ p {
 .contact-stripe p {
   font-size: 1.3rem;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .contact-stripe .item:last-child {
@@ -12454,11 +12456,11 @@ p {
 .contact-stripe .item:last-child::before {
   content: '';
   position: absolute;
-  top: -85px;
-  right: -145px;
-  width: 180px;
-  height: 180px;
-  background: url('../images/pppointed.svg') no-repeat center/cover;
+  top: -40px;
+  right: -100px;
+  width: 80px;
+  height: 80px;
+  background: url('../images/pppointed.svg') no-repeat center/200px 250px;
 }
 
 .about-2-content .accordion-header button {
