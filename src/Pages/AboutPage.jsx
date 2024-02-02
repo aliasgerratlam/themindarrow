@@ -1,4 +1,4 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Accordion, Col, Container, Row } from 'react-bootstrap';
 import PageTitle from '../ui/PageTitle';
 import AboutImage from '../assets/images/about-2.jpg';
 import Mockup from '../assets/images/mockup.png';
@@ -23,7 +23,7 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <Helmet>
-        ‍<meta charSet="utf-8" />
+        <meta charSet="utf-8" />
         <title>About us - Themindarrow</title>
         <meta name="description" content="Discover the driving force behind Themindarrow Digital Marketing in our About Us page. Uncover our passion for innovative strategies, client success stories, and the dedicated team propelling your brand to new heights. Explore the intersection of creativity and technology as we navigate the ever-evolving landscape of digital marketing together."></meta>
         <meta name="keywords" content="Digital Marketing Visionaries, Innovative Marketing Team, Strategic Solutions Expertise"></meta>
@@ -33,12 +33,54 @@ const AboutPage = () => {
 
       <section className="about-2-area">
         <Container>
-          <Row>
+          <Row className="align-items-center">
             <Col md={5} className="order-md-1 order-2">
               <div className="about-2-content">
-                <h3 className="title">We help to create</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <h3 className="title">Top Affiliate Industry Summits</h3>
+                <p>It is one of the highly valued and well-known events in the affiliate marketing domain, with global and regional presence. This summit covers a wide range of topics related to affiliate marketing.</p>
+
+                <Accordion defaultActiveKey="0">
+                  <ReactWOW animation="fadeInDown" delay="0.4s">
+                    <Accordion.Item eventKey="0" className="item mb-2">
+                      <Accordion.Header>
+                        <h4 className="title">B2B Marketing Exchange (B2BMX)</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>While it is not exclusively focused on lead generation, B2BMX covers various aspects of B2B marketing, including lead generation strategies and tactics.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInDown" delay="0.5s">
+                    <Accordion.Item eventKey="1" className="item mb-2">
+                      <Accordion.Header>
+                        <h4 className="title">AW Summit (Affiliate World Summit)</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>This is a global conference that brings along top affiliate marketers and industry professionals on a single platform. It focuses on the latest trends, strategies, and technologies in the affiliate marketing space.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInDown" delay="0.6s">
+                    <Accordion.Item eventKey="2" className="item mb-2">
+                      <Accordion.Header>
+                        <h4 className="title">ASEURO (Affiliate Summit Europe)</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>It is a European edition of the Affiliate Summit, offering networking opportunities and educational sessions for affiliate marketers.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInDown" delay="0.7s">
+                    <Accordion.Item eventKey="3" className="item">
+                      <Accordion.Header>
+                        <h4 className="title">Performance Marketing Insights (PMI)</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>A series of global events focusing on performance marketing, covering topics such as affiliate marketing, lead generation, and digital advertising.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                </Accordion>
               </div>
             </Col>
             <Col md={7} className="order-md-2 order-1">
@@ -72,28 +114,39 @@ const AboutPage = () => {
             </Col>
             <Col lg={5} md={6}>
               <div className="about-2-content">
-                <h3 className="title">Why Choose us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                <ReactWOW animation="fadeInDown" delay="0.2s">
-                  <div className="item active mt-4">
-                    <h4 className="title mb-1">Experience and Expertise</h4>
-                    <p>Sitting proudly atop is the two-storey penthouse. The and opens breathtaking plunge.</p>
-                  </div>
-                </ReactWOW>
-
-                <ReactWOW animation="fadeInDown" delay="0.4s">
-                  <div className="item active mt-4">
-                    <h4 className="title mb-1">Customized Solutions</h4>
-                    <p>Sitting proudly atop is the two-storey penthouse. The and opens breathtaking plunge.</p>
-                  </div>
-                </ReactWOW>
-                <ReactWOW animation="fadeInDown" delay="0.6s">
-                  <div className="item active mt-4">
-                    <h4 className="title mb-1">Trust and Reliability</h4>
-                    <p>Sitting proudly atop is the two-storey penthouse. The and opens breathtaking plunge.</p>
-                  </div>
-                </ReactWOW>
+                <h3 className="title">Top Lead Generation Summits</h3>
+                <Accordion defaultActiveKey="4">
+                  <ReactWOW animation="fadeInDown" delay="0.8s">
+                    <Accordion.Item eventKey="4" className="item mb-2">
+                      <Accordion.Header>
+                        <h4 className="title">LeadsCon</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>It is a premier event instrumental for lead generation professionals, providing insights into the latest trends, strategies, and technologies in the lead generation industry.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInDown" delay="1s">
+                    <Accordion.Item eventKey="6" className="item mb-2">
+                      <Accordion.Header>
+                        <h4 className="title">Digital Summit</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>These events cover a broad spectrum of digital marketing topics, including lead generation, and are held in various locations across the United States.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInDown" delay="1.2s">
+                    <Accordion.Item eventKey="7" className="item">
+                      <Accordion.Header>
+                        <h4 className="title">Content Marketing World</h4>
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p>While primarily focused on content marketing, this event often explores lead generation strategies within the context of content creation and distribution.</p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </ReactWOW>
+                </Accordion>
               </div>
             </Col>
           </Row>

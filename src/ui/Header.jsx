@@ -68,9 +68,9 @@ const Header = () => {
               </Navbar.Collapse>
 
               <div className="navbar-btn d-none d-sm-block">
-                <Link className="main-btn" to="/contact" eventKey="5">
+                <NavLink className="main-btn" to="/contact" eventKey="6">
                   Contact us
-                </Link>
+                </NavLink>
               </div>
             </Navbar>
           </div>

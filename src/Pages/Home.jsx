@@ -6,6 +6,7 @@ import Process from '../Components/Home/Process';
 import Service from '../Components/Home/Service';
 import Testimonial from '../Components/Home/Testimonial';
 import { Helmet } from 'react-helmet';
+import ContactStripe from '../Components/Home/ContactStripe';
 
 const Home = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Service />
       <Testimonial />
       <Brands />
+      <ContactStripe />
     </>
   );
 };
