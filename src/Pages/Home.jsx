@@ -7,6 +7,7 @@ import Service from '../Components/Home/Service';
 import Testimonial from '../Components/Home/Testimonial';
 import { Helmet } from 'react-helmet';
 import ContactStripe from '../Components/Home/ContactStripe';
+import Feature from '../Components/Home/Feature';
 
 const Home = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Home = () => {
 
       <Hero />
       <About />
+      <Feature />
       <Process />
       <Service />
       <Testimonial />

@@ -9,6 +9,7 @@ import ServicePage from './Pages/Service';
 import ContactPage from './Pages/Contact';
 import { Toaster } from 'react-hot-toast';
 import FraudTrafficPolicy from './Pages/FraudTrafficPolicy';
+import GlobalPresence from './Pages/GlobalPresence';
 
 function App() {
   return (

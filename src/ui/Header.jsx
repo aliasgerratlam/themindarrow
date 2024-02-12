@@ -1,5 +1,5 @@
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
-import { Link, NavLink, useLocation, useParams } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
 import WhiteLogo from '../assets/images/white-logo.png';
 import { useLayoutEffect, useRef, useState } from 'react';
@@ -61,7 +61,7 @@ const Header = () => {
                   <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="4">
                     Career
                   </Nav.Link>
-                  <Nav.Link className="nav-link d-md-none d-block" as={NavLink} to="/contact" eventKey="5">
+                  <Nav.Link className="nav-link d-md-none d-block" as={NavLink} to="/contact" eventKey="6">
                     Contact us
                   </Nav.Link>
                 </Nav>

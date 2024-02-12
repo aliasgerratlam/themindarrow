@@ -9,6 +9,11 @@ import Marketing from '../assets/images/service/performance.png';
 import Planning from '../assets/images/service/startegy.png';
 import Technology from '../assets/images/service/technology.png';
 import Investment from '../assets/images/service/investment.png';
+import Facebook from '../assets/images/feature/social-media.png';
+import GoogleAds from '../assets/images/feature/adwords.png';
+import Amazon from '../assets/images/feature/amazon.png';
+import LinkedIn from '../assets/images/feature/linkedin.png';
+import Consumer from '../assets/images/feature/consumer.png';
 
 import SEO from '../assets/images/service/seo.png';
 import Content from '../assets/images/service/content-marketing.png';
@@ -161,6 +166,13 @@ const ServicePage = () => {
         </Container>
       </section>
 
+      
+      <div className="feature-line text-center mb-5">
+        <h2>Partner with us to propel your brand to new heights.</h2>
+        <h3>Feel free to customize this further based on your specific brand voice and audience</h3>
+      </div>
+      
+
       <section className="sub-2-area bg-light">
         <Container>
           <div className="sub-box">
@@ -210,6 +222,60 @@ const ServicePage = () => {
                   </div>
                 </ReactWOW>
               </Col>
+
+              <Col lg={4} md={6}>
+                <ReactWOW animation="fadeInUp" delay="0.2s">
+                  <div className="sub-2-item mt-30 item-3">
+                    <Image src={Facebook} alt="Report" />
+                    <h4 className="title">Facebook & Instagram</h4>
+                    <p>Advertising Expertise: Our meticulously tailored Facebook and Instagram ad campaigns seamlessly integrate authentic messaging with captivating imagery to effectively resonate your brand’s narrative to highly segmented audiences.</p>
+                  </div>
+                </ReactWOW>
+              </Col>
+
+              <Col lg={4} md={6}>
+                <ReactWOW animation="fadeInUp" delay="0.2s">
+                  <div className="sub-2-item mt-30 item-3">
+                    <Image src={GoogleAds} alt="Report" />
+                    <h4 className="title">Google Ads Mastery</h4>
+                    <p>Mindarrow has also mastered the art of positioning your brand on the world’s largest search platform where high intent searchers can know your brand through targeted keyword bidding.</p>
+                  </div>
+                </ReactWOW>
+              </Col>
+
+              <Col lg={4} md={6}>
+                <ReactWOW animation="fadeInUp" delay="0.2s">
+                  <div className="sub-2-item mt-30 item-3">
+                    <Image src={Amazon} alt="Report" />
+                    <h4 className="title">Amazon Services Excellence</h4>
+                    <p>On Amazon too, Mindarrow can further build your brand with well crafted and growth enhancing paid media campaigns, comprising of compelling creatives. We adeptly manage sales and inventory across all Amazon platforms.</p>
+                  </div>
+                </ReactWOW>
+              </Col>
+
+              <Col lg={4} md={6}>
+                <ReactWOW animation="fadeInUp" delay="0.2s">
+                  <div className="sub-2-item mt-30 item-3">
+                    <Image src={LinkedIn} alt="Report" />
+                    <h4 className="title">LinkedIn Advertising Authority</h4>
+                    <p>Let your brand hold the edge on the world’s largest networking platform with Mindarrow, where we’ll establish your brand as a thought leader within your industry or connect with professionals and businesses seeking your products and services.</p>
+                  </div>
+                </ReactWOW>
+              </Col>
+              
+              <Col lg={6} md={6}>
+                <ReactWOW animation="fadeInUp" delay="0.2s">
+                  <div className="sub-2-item mt-30 item-3">
+                    <Image src={Consumer} alt="Report" />
+                    <h4 className="title">Consumer Touchpoint Targeting Technology</h4>
+                    <p>Now, with so much advancement in brand building, you can capitalize big. Fresh from the oven is the AI touch. Harness it to reach your valued audience. From implementing personalized shopping experiences and user journeys to constructing sophisticated retargeting flows using online data, Mindarrow’s solutions enable you to bring to life lost sales and intensify customer engagement.</p>
+                  </div>
+                </ReactWOW>
+              </Col>
+
+             
+
+              
             </Row>
           </div>
         </Container>
