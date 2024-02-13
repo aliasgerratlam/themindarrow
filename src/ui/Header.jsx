@@ -49,26 +49,26 @@ const Header = () => {
 
               <Navbar.Collapse className="sub-menu-bar" id="navbarSupportedContent">
                 <Nav className="ms-auto">
-                  <Nav.Link className="nav-link" as={NavLink} to="/" eventKey="1">
+                  <Nav.Link className="nav-link" as={NavLink} to="/" eventkey="1">
                     Home
                   </Nav.Link>
-                  <Nav.Link className="nav-link" as={NavLink} to="/about" eventKey="2">
+                  <Nav.Link className="nav-link" as={NavLink} to="/about" eventkey="2">
                     About
                   </Nav.Link>
-                  <Nav.Link className="nav-link" as={NavLink} to="/service" eventKey="3">
+                  <Nav.Link className="nav-link" as={NavLink} to="/service" eventkey="3">
                     Services
                   </Nav.Link>
-                  <Nav.Link className="nav-link" as={NavLink} to="/career" eventKey="4">
+                  <Nav.Link className="nav-link" as={NavLink} to="/career" eventkey="4">
                     Career
                   </Nav.Link>
-                  <Nav.Link className="nav-link d-md-none d-block" as={NavLink} to="/contact" eventKey="6">
+                  <Nav.Link className="nav-link d-md-none d-block" as={NavLink} to="/contact" eventkey="6">
                     Contact us
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
 
               <div className="navbar-btn d-none d-sm-block">
-                <NavLink className="main-btn" to="/contact" eventKey="6">
+                <NavLink className="main-btn" to="/contact" eventkey="6">
                   Contact us
                 </NavLink>
               </div>

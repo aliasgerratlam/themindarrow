@@ -1,26 +1,34 @@
-import { Col, Container, Row } from "react-bootstrap"
-import { Link } from "react-router-dom"
-import ReactWOW from "react-wow"
+import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import ReactWOW from 'react-wow';
 
 const Hero = () => {
-    return (
-        <>
-            <section className="hero-area">
-                <div className="shape"></div>
-                <Container>
-                    <Row className="align-items-center">
-                        <Col lg={6}>
-                            <div className="hero-content">
-                                <ReactWOW animation='fadeIn' delay="0.3s"><h1 className="title">Blending AI with innovation to elevate brand image, digitally</h1></ReactWOW>
-                                <ReactWOW animation='fadeIn' delay="0.6s"><span>With unique business passionate people behind.</span></ReactWOW>
-                                <ReactWOW animation='fadeIn' delay="0.9s"><Link className="main-btn main-btn-2" href="#">Let’s Talk</Link></ReactWOW>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+  return (
+    <>
+      <section className="hero-area">
+        <div className="shape"></div>
+        <Container>
+          <Row className="align-items-center">
+            <Col lg={6}>
+              <div className="hero-content">
+                <ReactWOW animation="fadeIn" delay="0.3s">
+                  <h1 className="title">Blending AI with innovation to elevate brand image, digitally</h1>
+                </ReactWOW>
+                <ReactWOW animation="fadeIn" delay="0.6s">
+                  <span>With unique business passionate people behind.</span>
+                </ReactWOW>
+                <ReactWOW animation="fadeIn" delay="0.9s">
+                  <Link className="main-btn main-btn-2" to="/contact">
+                    Let’s Talk
+                  </Link>
+                </ReactWOW>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-            {/* <section className="sub-item-area">
+      {/* <section className="sub-item-area">
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg={3} md={6} sm={8}>
@@ -121,9 +129,8 @@ const Hero = () => {
                     </Row>
                 </Container>
             </section> */}
-        </>
+    </>
+  );
+};
 
-    )
-}
-
-export default Hero
+export default Hero;

@@ -4658,7 +4658,7 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 .about-2-content .item .title {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 18px;
   margin: 0;
   color: #000;
@@ -4695,6 +4695,10 @@ p {
   background: url('../images/play-dot.png') no-repeat center/cover;
 }
 
+.global-presence-page .service-item p {
+  -webkit-line-clamp: inherit;
+}
+
 @media (max-width: 767px) {
   .about-2-thumb .thumb img {
     width: 100%;
@@ -4725,7 +4729,7 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(50%);
-  right: 0px;
+  right: 20px;
   border-radius: 8px;
   background: linear-gradient(330deg, #ff564f 0%, #fad029 80%);
   height: 160px;
@@ -10687,6 +10691,13 @@ p {
   box-shadow: none;
   border-radius: 0;
 }
+
+.contact-us-box .input-box input:focus,
+.contact-us-box .input-box select:focus,
+.contact-us-box .input-box textarea:focus {
+  outline: 2px solid #ef5350;
+}
+
 .contact-us-box .input-box textarea {
   width: 100%;
   background: #f5f5f5;
@@ -12426,10 +12437,9 @@ p {
 }
 
 .contact-us-area .sub-2-item p a {
-  font-size: 16px;
-  color: #000;
-  font-weight: 500;
-  text-decoration: underline !important;
+  font-size: 15px;
+  color: #445069;
+  font-weight: 400;
 }
 
 .policy-page .content {
@@ -12559,30 +12569,31 @@ p {
   padding: 5rem 10rem;
   background-color: #0f1016;
   border-radius: 30px;
-  color: #FFF;
+  color: #fff;
 }
 
 .attain-section h3 {
   letter-spacing: 2px;
 }
 
-.lender-publisher-section div[class*="col-"] {
+.lender-publisher-section div[class*='col-'] {
   background-color: #ef5350;
   border-radius: 40px;
   height: 450px;
   display: grid;
-  color: #FFF;
+  color: #fff;
   place-content: center;
-  border: 10px solid #FFF;
+  border: 10px solid #fff;
   padding: 5rem 3rem;
 }
 
-.lender-publisher-section div[class*="col-"]:first-child {
+.lender-publisher-section div[class*='col-']:first-child {
   background-color: #108971;
 }
 
 .feature-page .sub-2-area {
   margin-top: 8rem;
+  box-shadow: inset 0 0 25px -20px #0009;
 }
 
 .feature-page .service-item-wrapper img {
@@ -12590,7 +12601,7 @@ p {
   margin-bottom: 20px;
 }
 
-.lender-publisher-section div[class*="col-"] h3 {
+.lender-publisher-section div[class*='col-'] h3 {
   font-weight: 800;
   font-family: 'DM Serif Display';
   font-size: 42px;
@@ -12640,7 +12651,7 @@ p {
   height: 250px;
   object-fit: cover;
   width: 100%;
-} 
+}
 
 @media (min-width: 2100px) {
   .shapedividers_com-5355::before {
@@ -13080,7 +13091,8 @@ p {
     padding: 2rem;
   }
 
-  .global-presence-page .global-wrapper .global-item, .global-presence-page .global-wrapper .global-item img {
+  .global-presence-page .global-wrapper .global-item,
+  .global-presence-page .global-wrapper .global-item img {
     min-height: 300px;
   }
 
@@ -13097,7 +13109,7 @@ p {
     padding: 1rem 2rem 4rem;
   }
 
-  .lender-publisher-section div[class*="col-"] {
+  .lender-publisher-section div[class*='col-'] {
     height: 520px;
     padding: 5rem 2rem;
   }
@@ -13116,5 +13128,3 @@ p {
     filter: invert(0);
   }
 }
-
-

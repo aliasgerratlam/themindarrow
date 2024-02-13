@@ -76,12 +76,12 @@ const ContactPage = () => {
                 <img src={Mail} alt="Mail" />
                 <h4 className="title">Email us</h4>
                 <p>
-                  <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
+                  <a href="mailto:younusfarhat@gmail.com">younusfarhat@gmail.com</a>
                 </p>
               </div>
             </ReactWOW>
           </Col>
-          <Col lg={4} md={6}>
+          {/* <Col lg={4} md={6}>
             <ReactWOW animation="fadeInUp" delay="0.6s">
               <div className="sub-2-item text-center">
                 <img src={Phone} alt="Phone" />
@@ -91,7 +91,7 @@ const ContactPage = () => {
                 </p>
               </div>
             </ReactWOW>
-          </Col>
+          </Col> */}
         </Row>
 
         <Row className="justify-content-center">
@@ -190,7 +190,6 @@ const ContactPage = () => {
       </Container>
 
       <div className="contact-map mt-md-0 mt-5">
-        
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41284.7737301129!2d-73.05706490903611!3d40.813306109675395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e84627aec49dad%3A0xcd07930db627d160!2s140%20Barretts%20Ave%2C%20Holtsville%2C%20NY%2011742%2C%20USA!5e0!3m2!1sen!2sin!4v1706949850537!5m2!1sen!2sin"
           width="600"

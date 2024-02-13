@@ -67,10 +67,10 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">Choosing theMindarrow for our digital marketing needs was a game-changer! Their team's expertise and dedication catapulted our online presence to new heights. We saw a significant increase in traffic and engagement, leading to tangible business growth. Highly recommend their services!</p>
             <div className="info">
-              <h5 className="title">Abdur Rohman</h5>
-              <span>Sr. Product designer</span>
+              <h5 className="title">Emily Parker</h5>
+              {/* <span>Sr. Product designer</span> */}
             </div>
           </div>
 
@@ -82,10 +82,10 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">I can't thank theMindarrow enough for their exceptional work! From strategizing to execution, they delivered top-notch digital marketing solutions tailored to our business goals. Their transparent communication and proactive approach made the entire process seamless. A trustworthy partner indeed!</p>
             <div className="info">
-              <h5 className="title">Mehedi Hasan</h5>
-              <span>Sr. Product designer</span>
+              <h5 className="title">Michael Johnson</h5>
+              {/* <span>Sr. Product designer</span> */}
             </div>
           </div>
 
@@ -97,10 +97,10 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">Working with theMindarrow has been a breath of fresh air! They took the time to understand our brand and target audience, crafting campaigns that resonated deeply. The results speak for themselves – improved brand visibility, higher conversions, and happier customers. Look no further for your digital marketing needs.</p>
             <div className="info">
-              <h5 className="title">Mosharof Hossain</h5>
-              <span>Sr. Product designer</span>
+              <h5 className="title">Sophia Rodriguez</h5>
+              {/* <span>Sr. Product designer</span> */}
             </div>
           </div>
 
@@ -112,10 +112,10 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">Kudos to theMindarrow for their outstanding performance! Their team's creativity and innovation set them apart in the digital marketing landscape. With their strategic guidance, we experienced a significant boost in online engagement and brand awareness. Partnering with them was one of the best decisions we made for our business.</p>
             <div className="info">
               <h5 className="title">Rayhan Uddin</h5>
-              <span>Sr. Product designer</span>
+              {/* <span>Sr. Product designer</span> */}
             </div>
           </div>
 
@@ -127,10 +127,10 @@ const Testimonial = () => {
                 </g>
               </svg>
             </div>
-            <p className="text-white">There are many variations from into passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
+            <p className="text-white">theMindarrow exceeded our expectations in every way possible! Their professionalism, attention to detail, and commitment to delivering results are unmatched. They not only helped us reach our target audience but also provided valuable insights to optimize our marketing efforts further. A reliable partner for long-term success.</p>
             <div className="info">
               <h5 className="title">Imran Ahmed</h5>
-              <span>Sr. Product designer</span>
+              {/* <span>Sr. Product designer</span> */}
             </div>
           </div>
         </Slider>
