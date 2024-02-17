@@ -34,7 +34,7 @@ const FooterNew = () => {
                       <Link to="/fraud-traffic-policy">Fraud Traffic Policy</Link>
                     </li>
                     <li>
-                      <Link>Privacy policy</Link>
+                      <Link to="/privacy-policy">Privacy policy</Link>
                     </li>
                     <li>
                       <Link to="/contact">Contact us</Link>
