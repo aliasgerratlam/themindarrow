@@ -76,7 +76,7 @@ const ContactPage = () => {
                 <img src={Mail} alt="Mail" />
                 <h4 className="title">Email us</h4>
                 <p>
-                  <a href="mailto:younusfarhat@gmail.com">younusfarhat@gmail.com</a>
+                  <a href="mailto:ruthj5913@gmail.com">ruthj5913@gmail.com</a>
                 </p>
               </div>
             </ReactWOW>
