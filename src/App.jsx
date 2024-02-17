@@ -9,6 +9,7 @@ import ServicePage from './Pages/Service';
 import ContactPage from './Pages/Contact';
 import { Toaster } from 'react-hot-toast';
 import FraudTrafficPolicy from './Pages/FraudTrafficPolicy';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/career" element={<Career />} />
             <Route path="/service" element={<ServicePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/fraud-traffic-policy" element={<FraudTrafficPolicy />} />
           </Route>
         </Routes>

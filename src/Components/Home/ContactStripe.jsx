@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const ContactStripe = () => {
   return (
-    <div className="contact-stripe pb-5">
-      <div className="shapedividers_com-5355"></div>
+    <div className="contact-stripe py-5">
+      {/* <div className="shapedividers_com-5355"></div> */}
       <Container>
         <div className="contact-stripe-items d-flex flex-column justify-content-center align-items-center text-center">
           <div className="item">
