@@ -12808,7 +12808,7 @@ p {
   }
 
   .home-process-v2-section .process-steps .process-steps-inner .phase {
-    width: 75%;
+    width: 100%;
     padding: 15px;
     margin-bottom: 0px;
     justify-self: center;
