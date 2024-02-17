@@ -18,8 +18,8 @@ const FooterNew = () => {
               <ReactWOW animation="fadeIn">
                 <div className="footer-address text-md-start text-center">
                   <p>140 Barretts Ave New York, Holtsville, NY</p>
-                  <a href="mailto:hello@themindarrow.com">hello@themindarrow.com</a>
-                  <a href="tel:+61 3 9671 3953">+61 3 9671 3953</a>
+                  <a href="mailto:ruthj5913@gmail.com">ruthj5913@gmail.com</a>
+                  {/* <a href="tel:+61 3 9671 3953">+61 3 9671 3953</a> */}
                 </div>
               </ReactWOW>
             </Col>
