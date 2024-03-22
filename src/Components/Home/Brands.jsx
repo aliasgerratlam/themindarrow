@@ -18,10 +18,13 @@ const Brands = () => {
       <Container>
         <Row>
           <Col lg={12}>
-            <div className="brand-3-items d-flex justify-content-between">
+            {/* <div className="brand-3-items d-flex justify-content-between">
               <div className="item corporate-ban">
                 <Image src={Corporate} alt="Corporate" />
               </div>
+            </div> */}
+            <div className='heading text-center mb-5'>
+              <h2>Our Corporate Clients</h2>
             </div>
           </Col>
           <Col lg={12} className="mt-0">
